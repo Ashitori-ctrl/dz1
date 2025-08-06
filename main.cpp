@@ -37,7 +37,7 @@ public:
     virtual void speak() const {
         cout << "Животное издает звук" << endl;
     }
-    virtual ~Animal() = default; // Виртуальный деструктор для корректного удаления
+    virtual ~Animal() = default;
 };
 
 class Dog : public Animal {
@@ -57,8 +57,8 @@ public:
 // 4 абстракция
 class Shape {
 public:
-    virtual double area() const = 0; // Чисто виртуальная функция
-    virtual ~Shape() = default; // Виртуальный деструктор
+    virtual double area() const = 0;
+    virtual ~Shape() = default;
 };
 
 class Rectangle : public Shape {
