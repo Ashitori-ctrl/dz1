@@ -58,7 +58,7 @@ public:
 class Shape {
 public:
     virtual double area() const = 0; // можно вызывать area() через указатель на Shape, поэтому тут чисто виртуальная функция для класса Shape
-    virtual ~Shape() = default;
+    virtual ~Shape() = default; // виртуальный деструктор для задачи 5
 };
 
 class Rectangle : public Shape {
