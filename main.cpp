@@ -57,7 +57,7 @@ public:
 // 4 абстракция
 class Shape {
 public:
-    virtual double area() const = 0;
+    virtual double area() const = 0; // можно вызывать area() через указатель на Shape, поэтому тут чисто виртуальная функция для класса Shape
     virtual ~Shape() = default;
 };
 
